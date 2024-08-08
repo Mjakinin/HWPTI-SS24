@@ -1,0 +1,386 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Jul 10 16:34:29 2024
+# Process ID: 15692
+# Current directory: C:/Users/sewes/Blatt09/Blatt09.runs/synth_1
+# Command line: vivado.exe -log ArmDataPath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ArmDataPath.tcl
+# Log file: C:/Users/sewes/Blatt09/Blatt09.runs/synth_1/ArmDataPath.vds
+# Journal file: C:/Users/sewes/Blatt09/Blatt09.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ArmDataPath.tcl -notrace
+Command: synth_design -top ArmDataPath -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11392 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 342.375 ; gain = 94.867
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1090] 'armregfile' is not compiled in library work [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:19]
+WARNING: [Synth 8-1090] 'armshifter' is not compiled in library work [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:20]
+WARNING: [Synth 8-1090] 'armalu' is not compiled in library work [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:21]
+WARNING: [Synth 8-1090] 'armprogramstatusregister' is not compiled in library work [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:23]
+WARNING: [Synth 8-1090] 'armwordmanipulation' is not compiled in library work [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'ArmDataPath' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:133]
+INFO: [Synth 8-3491] module 'ArmInstructionAddressRegister' declared at 'C:/Users/sewes/OneDrive/Desktop/HWPR/ArmInstructionAddressRegister.vhd:16' bound to instance 'ArmInstructionAddressRegister_Instance' of component 'ArmInstructionAddressRegister' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:357]
+INFO: [Synth 8-638] synthesizing module 'ArmInstructionAddressRegister' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmInstructionAddressRegister.vhd:38]
+	Parameter ARB_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter ARB_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'ArmRamBuffer' declared at 'C:/Users/sewes/OneDrive/Desktop/HWPR/ArmRamBuffer.vhd:13' bound to instance 'IAR_HISTORY_BUFFER' of component 'ArmRamBuffer' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmInstructionAddressRegister.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'ArmRamBuffer' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmRamBuffer.vhd:27]
+	Parameter ARB_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter ARB_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ArmRamBuffer' (1#1) [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmRamBuffer.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'ArmInstructionAddressRegister' (2#1) [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmInstructionAddressRegister.vhd:38]
+INFO: [Synth 8-637] synthesizing blackbox instance 'Regfile_Instance' of component 'ArmRegfile' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:387]
+INFO: [Synth 8-637] synthesizing blackbox instance 'ArmProgramStatusRegister_Instance' of component 'ArmProgramStatusRegister' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:410]
+INFO: [Synth 8-637] synthesizing blackbox instance 'ArmALU_Instance' of component 'ArmALU' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:492]
+INFO: [Synth 8-3491] module 'ArmMultiplier' declared at 'C:/Users/sewes/OneDrive/Desktop/HWPR/ArmMultiplier.vhd:16' bound to instance 'ArmMultiplier_Instance' of component 'ArmMultiplier' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:502]
+INFO: [Synth 8-638] synthesizing module 'ArmMultiplier' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmMultiplier.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'ArmMultiplier' (3#1) [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmMultiplier.vhd:24]
+INFO: [Synth 8-637] synthesizing blackbox instance 'ArmShifter_Instance' of component 'ArmShifter' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:509]
+INFO: [Synth 8-3491] module 'ArmDataReplication' declared at 'C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataReplication.vhd:21' bound to instance 'ArmDataReplication_Instance' of component 'ArmDataReplication' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:600]
+INFO: [Synth 8-638] synthesizing module 'ArmDataReplication' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataReplication.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ArmDataReplication' (4#1) [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataReplication.vhd:28]
+INFO: [Synth 8-637] synthesizing blackbox instance 'ArmWordManipulation_Instance' of component 'ArmWordManipulation' [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:667]
+INFO: [Synth 8-256] done synthesizing module 'ArmDataPath' (5#1) [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:133]
+WARNING: [Synth 8-3331] design ArmDataPath has unconnected port DPA_WB_FBRANCH_MUX_CTRL
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 383.457 ; gain = 135.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 383.457 ; gain = 135.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 383.457 ; gain = 135.949
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Synth 8-6014] Unused sequential element current_address_reg was removed.  [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmInstructionAddressRegister.vhd:64]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 383.457 ; gain = 135.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     30 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ArmDataPath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     30 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+Module ArmInstructionAddressRegister 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ArmDataReplication 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ArmMultiplier 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmMultiplier.vhd:27]
+WARNING: [Synth 8-6014] Unused sequential element MEM_ADDR_REG_reg was removed.  [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmDataPath.vhd:615]
+WARNING: [Synth 8-6014] Unused sequential element ArmInstructionAddressRegister_Instance/current_address_reg was removed.  [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmInstructionAddressRegister.vhd:64]
+DSP Report: Generating DSP computation.ArmMultiplier_Instance/MUL_64, operation Mode is: A*B.
+DSP Report: operator computation.ArmMultiplier_Instance/MUL_64 is absorbed into DSP computation.ArmMultiplier_Instance/MUL_64.
+DSP Report: operator computation.ArmMultiplier_Instance/MUL_64 is absorbed into DSP computation.ArmMultiplier_Instance/MUL_64.
+DSP Report: Generating DSP computation.ArmMultiplier_Instance/MUL_64, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator computation.ArmMultiplier_Instance/MUL_64 is absorbed into DSP computation.ArmMultiplier_Instance/MUL_64.
+DSP Report: operator computation.ArmMultiplier_Instance/MUL_64 is absorbed into DSP computation.ArmMultiplier_Instance/MUL_64.
+DSP Report: Generating DSP computation.ArmMultiplier_Instance/MUL_64, operation Mode is: A*B.
+DSP Report: operator computation.ArmMultiplier_Instance/MUL_64 is absorbed into DSP computation.ArmMultiplier_Instance/MUL_64.
+DSP Report: operator computation.ArmMultiplier_Instance/MUL_64 is absorbed into DSP computation.ArmMultiplier_Instance/MUL_64.
+DSP Report: Generating DSP computation.ArmMultiplier_Instance/MUL_64, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator computation.ArmMultiplier_Instance/MUL_64 is absorbed into DSP computation.ArmMultiplier_Instance/MUL_64.
+DSP Report: operator computation.ArmMultiplier_Instance/MUL_64 is absorbed into DSP computation.ArmMultiplier_Instance/MUL_64.
+WARNING: [Synth 8-3331] design ArmDataPath has unconnected port DPA_WB_FBRANCH_MUX_CTRL
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                                            | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------------------------------------------------+-----------+----------------------+-----------------+
+|ArmDataPath | ArmInstructionAddressRegister_Instance/IAR_HISTORY_BUFFER/ARB_RAM_reg | Implied   | 8 x 30               | RAM16X1S x 30   | 
++------------+-----------------------------------------------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ArmDataPath | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ArmDataPath | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ArmDataPath | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ArmDataPath | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                                            | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------------------------------------------------+-----------+----------------------+-----------------+
+|ArmDataPath | ArmInstructionAddressRegister_Instance/IAR_HISTORY_BUFFER/ARB_RAM_reg | Implied   | 8 x 30               | RAM16X1S x 30   | 
++------------+-----------------------------------------------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------+----------+
+|      |BlackBox name            |Instances |
++------+-------------------------+----------+
+|1     |ArmRegfile               |         1|
+|2     |ArmProgramStatusRegister |         1|
+|3     |ArmWordManipulation      |         1|
+|4     |ArmALU                   |         1|
+|5     |ArmShifter               |         1|
++------+-------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |ArmALU_bbox_2                   |     1|
+|2     |ArmProgramStatusRegister_bbox_1 |     1|
+|3     |ArmRegfile_bbox_0               |     1|
+|4     |ArmShifter_bbox_3               |     1|
+|5     |ArmWordManipulation_bbox_4      |     1|
+|6     |BUFG                            |     1|
+|7     |CARRY4                          |    28|
+|8     |DSP48E1                         |     3|
+|9     |LUT2                            |    31|
+|10    |LUT3                            |   151|
+|11    |LUT4                            |     8|
+|12    |LUT5                            |    76|
+|13    |LUT6                            |   137|
+|14    |RAM16X1S                        |    30|
+|15    |FDRE                            |   334|
+|16    |IBUF                            |   168|
+|17    |OBUF                            |   126|
++------+--------------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------+------------------------------+------+
+|      |Instance                                 |Module                        |Cells |
++------+-----------------------------------------+------------------------------+------+
+|1     |top                                      |                              |  1354|
+|2     |  ArmInstructionAddressRegister_Instance |ArmInstructionAddressRegister |   139|
+|3     |    IAR_HISTORY_BUFFER                   |ArmRamBuffer                  |    61|
+|4     |  \computation.ArmMultiplier_Instance    |ArmMultiplier                 |   118|
++------+-----------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 557.863 ; gain = 310.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 557.863 ; gain = 310.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 557.863 ; gain = 310.355
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmRegfile.edf]
+Finished Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmRegfile.edf]
+Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmProgramStatusRegister.edf]
+Finished Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmProgramStatusRegister.edf]
+Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmWordManipulation.edf]
+Finished Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmWordManipulation.edf]
+Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmALU.edf]
+Finished Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmALU.edf]
+Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmShifter.edf]
+Finished Parsing EDIF File [C:/Users/sewes/OneDrive/Desktop/HWPR/ArmShifter.edf]
+INFO: [Netlist 29-17] Analyzing 677 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 30 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 632.105 ; gain = 394.777
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sewes/Blatt09/Blatt09.runs/synth_1/ArmDataPath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ArmDataPath_utilization_synth.rpt -pb ArmCoarseInstructionDecoder_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 632.105 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 10 16:35:04 2024...
